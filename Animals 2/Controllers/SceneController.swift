@@ -46,9 +46,7 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     scrollView.delegate = self
     
     pageControl.numberOfPages = animals.list.count
-    pageControl.currentPage = 0
-    
-    //showPosition(position: 5)
+    pageControl.currentPage = 0        
   }
   
   // ---------------------------------------
@@ -91,15 +89,5 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
     print(currentScreenIndex)
   }
-  
-  // ---------------------------------------
-  // Zobrazení konkrétního snímku
-  // ---------------------------------------
-  
-  func showPosition(position: Int){
-    scrollView.setContentOffset(CGPoint(x: screenSize.width * CGFloat(position), y: 0), animated: true)
-    pageControl.currentPage = position
-  }
-  
   
 }

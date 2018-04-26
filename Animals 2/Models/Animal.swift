@@ -10,13 +10,13 @@ import Foundation
 
 class Animal {
   
-  enum Environment {
-    case farm
-    case jungle
-    case jungleRiver
-    case forest
-    case sea
-    case river
+  enum Environment: String {
+    case farm = "farm"
+    case jungle = "jungle"
+    case jungleRiver = "jungleRiver"
+    case forest = "forest"
+    case sea = "sea"
+    case river = "river"
   }
   
   let name: String

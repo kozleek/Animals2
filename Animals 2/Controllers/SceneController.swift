@@ -46,9 +46,24 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     pageControl.currentPage = 0
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "SceneToDetail" {
+      if let detail = segue.destination as? DetailController {
+        detail.animal = currentAnimal
+        detail.scrollViewPosition = currentScreenIndex
+      }
+    }
+  }
+  
   func scrollViewDidEndDecelerating(_ sender: UIScrollView){
     currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
     pageControl.currentPage = currentScreenIndex
+    currentAnimal = animals.list[currentScreenIndex]
   }
 
+  @IBAction func tapOpenAction(_ sender: UITapGestureRecognizer) {
+    performSegue(withIdentifier: "SceneToDetail", sender: nil)
+  }
+  
+  
 }

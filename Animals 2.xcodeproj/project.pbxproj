@@ -13,6 +13,7 @@
 		E087BA8F209247460062C37F /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA8E209247460062C37F /* SceneController.swift */; };
 		E087BA932092484A0062C37F /* AnimalsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA91209248490062C37F /* AnimalsBank.swift */; };
 		E087BA942092484A0062C37F /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA92209248490062C37F /* Animal.swift */; };
+		E087BA98209255740062C37F /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA97209255740062C37F /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E087BA8E209247460062C37F /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
 		E087BA91209248490062C37F /* AnimalsBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsBank.swift; sourceTree = "<group>"; };
 		E087BA92209248490062C37F /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		E087BA97209255740062C37F /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E087BA8E209247460062C37F /* SceneController.swift */,
+				E087BA97209255740062C37F /* DetailController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				E087BA7D209246F50062C37F /* AppDelegate.swift in Sources */,
 				E087BA942092484A0062C37F /* Animal.swift in Sources */,
 				E087BA932092484A0062C37F /* AnimalsBank.swift in Sources */,
+				E087BA98209255740062C37F /* DetailController.swift in Sources */,
 				E087BA8F209247460062C37F /* SceneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

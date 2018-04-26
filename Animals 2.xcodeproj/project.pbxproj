@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E087BA7D209246F50062C37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA7C209246F50062C37F /* AppDelegate.swift */; };
-		E087BA7F209246F50062C37F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA7E209246F50062C37F /* ViewController.swift */; };
 		E087BA82209246F50062C37F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E087BA80209246F50062C37F /* Main.storyboard */; };
 		E087BA84209246F70062C37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E087BA83209246F70062C37F /* Assets.xcassets */; };
-		E087BA87209246F70062C37F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E087BA85209246F70062C37F /* LaunchScreen.storyboard */; };
+		E087BA8F209247460062C37F /* SceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA8E209247460062C37F /* SceneController.swift */; };
+		E087BA932092484A0062C37F /* AnimalsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA91209248490062C37F /* AnimalsBank.swift */; };
+		E087BA942092484A0062C37F /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA92209248490062C37F /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E087BA79209246F50062C37F /* Animals 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E087BA7C209246F50062C37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E087BA7E209246F50062C37F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E087BA81209246F50062C37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E087BA83209246F70062C37F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E087BA86209246F70062C37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E087BA88209246F70062C37F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E087BA8E209247460062C37F /* SceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneController.swift; sourceTree = "<group>"; };
+		E087BA91209248490062C37F /* AnimalsBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsBank.swift; sourceTree = "<group>"; };
+		E087BA92209248490062C37F /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		E087BA7B209246F50062C37F /* Animals 2 */ = {
 			isa = PBXGroup;
 			children = (
+				E087BA96209248780062C37F /* Views */,
+				E087BA952092486C0062C37F /* Controllers */,
+				E087BA90209247FA0062C37F /* Models */,
 				E087BA7C209246F50062C37F /* AppDelegate.swift */,
-				E087BA7E209246F50062C37F /* ViewController.swift */,
-				E087BA80209246F50062C37F /* Main.storyboard */,
-				E087BA83209246F70062C37F /* Assets.xcassets */,
-				E087BA85209246F70062C37F /* LaunchScreen.storyboard */,
 				E087BA88209246F70062C37F /* Info.plist */,
 			);
 			path = "Animals 2";
+			sourceTree = "<group>";
+		};
+		E087BA90209247FA0062C37F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E087BA83209246F70062C37F /* Assets.xcassets */,
+				E087BA92209248490062C37F /* Animal.swift */,
+				E087BA91209248490062C37F /* AnimalsBank.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E087BA952092486C0062C37F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E087BA8E209247460062C37F /* SceneController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E087BA96209248780062C37F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E087BA80209246F50062C37F /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +149,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E087BA87209246F70062C37F /* LaunchScreen.storyboard in Resources */,
 				E087BA84209246F70062C37F /* Assets.xcassets in Resources */,
 				E087BA82209246F50062C37F /* Main.storyboard in Resources */,
 			);
@@ -135,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E087BA7F209246F50062C37F /* ViewController.swift in Sources */,
 				E087BA7D209246F50062C37F /* AppDelegate.swift in Sources */,
+				E087BA942092484A0062C37F /* Animal.swift in Sources */,
+				E087BA932092484A0062C37F /* AnimalsBank.swift in Sources */,
+				E087BA8F209247460062C37F /* SceneController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +177,6 @@
 				E087BA81209246F50062C37F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E087BA85209246F70062C37F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E087BA86209246F70062C37F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -290,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.cistokocky.Animals-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -308,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "cz.cistokocky.Animals-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

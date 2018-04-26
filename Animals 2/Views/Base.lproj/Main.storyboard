@@ -37,13 +37,14 @@
                     </view>
                     <connections>
                         <outlet property="detailImage" destination="c6k-Mz-75f" id="w6q-iJ-Yab"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="DetailToScene" modalTransitionStyle="crossDissolve" id="isM-ZV-QGJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3x-CN-BqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6SC-Rj-QF5" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="Fcx-MZ-vlJ">
                     <connections>
                         <action selector="tapCloseAction:" destination="g5z-NZ-fO3" id="1q2-6T-4Au"/>
+                        <segue destination="6SC-Rj-QF5" kind="unwind" unwindAction="unwindSegue:" id="B8L-Bh-9ig"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

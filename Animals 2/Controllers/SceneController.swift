@@ -17,8 +17,11 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   var animals = AnimalsBank()
   var currentAnimal: Animal!
-  
   var currentScreenIndex: Int = 0
+  
+  // ---------------------------------------
+  // Hlavni funkce
+  // ---------------------------------------
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -44,7 +47,13 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     
     pageControl.numberOfPages = animals.list.count
     pageControl.currentPage = 0
+    
+    //showPosition(position: 5)
   }
+  
+  // ---------------------------------------
+  // Připrava dat pro předání přes segue
+  // ---------------------------------------
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "SceneToDetail" {
@@ -55,14 +64,41 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     }
   }
   
+  // ---------------------------------------
+  // ScrollView - vyhodnocení stavu
+  // ---------------------------------------
+  
   func scrollViewDidEndDecelerating(_ sender: UIScrollView){
     currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
     pageControl.currentPage = currentScreenIndex
     currentAnimal = animals.list[currentScreenIndex]
   }
 
+  // ---------------------------------------
+  // Spuštění segue pro přechod do detailu
+  // ---------------------------------------
+  
   @IBAction func tapOpenAction(_ sender: UITapGestureRecognizer) {
     performSegue(withIdentifier: "SceneToDetail", sender: nil)
+  }
+
+  // ---------------------------------------
+  // Unwind segue - neprepise puvodni stav
+  // zatim Magic :))
+  // ---------------------------------------
+
+  
+  @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
+    print(currentScreenIndex)
+  }
+  
+  // ---------------------------------------
+  // Zobrazení konkrétního snímku
+  // ---------------------------------------
+  
+  func showPosition(position: Int){
+    scrollView.setContentOffset(CGPoint(x: screenSize.width * CGFloat(position), y: 0), animated: true)
+    pageControl.currentPage = position
   }
   
   

@@ -17,7 +17,7 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   var animals = AnimalsBank()
   var currentAnimal: Animal!
-  var currentScreenIndex: Int = 0
+  var currentScreenIndex: Int?
   
   // ---------------------------------------
   // Hlavni funkce
@@ -55,8 +55,8 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   func scrollViewDidEndDecelerating(_ sender: UIScrollView){
     currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
-    pageControl.currentPage = currentScreenIndex
-    currentAnimal = animals.list[currentScreenIndex]
+    pageControl.currentPage = currentScreenIndex!
+    currentAnimal = animals.list[currentScreenIndex!]
   }
   
   // ---------------------------------------

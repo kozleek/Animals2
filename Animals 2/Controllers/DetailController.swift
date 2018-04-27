@@ -17,11 +17,9 @@ class DetailController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
+    // zpracovani predanych informaci ze segue
     detailImage.image = UIImage(named: animal.environment.rawValue)
   }
 
-  @IBAction func tapCloseAction(_ sender: UITapGestureRecognizer) {
-    performSegue(withIdentifier: "DetailToScene", sender: nil)
-  }
 }

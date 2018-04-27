@@ -80,14 +80,26 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     performSegue(withIdentifier: "SceneToDetail", sender: nil)
   }
 
+  @IBAction func pinchOpenAction(_ sender: UIPinchGestureRecognizer) {
+    if sender.state == .began{
+      print("Pinch Began")
+    }
+    if sender.state == .changed{
+      print(String(format:"Pinch scale: %1.3f",sender.scale))
+    }
+    if sender.state == .ended{
+      print("Pinch Ended")
+      performSegue(withIdentifier: "SceneToList", sender: nil)
+    }
+  }
+  
   // ---------------------------------------
   // Unwind segue - neprepise puvodni stav
   // zatim Magic :))
   // ---------------------------------------
 
   
-  @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
-    print(currentScreenIndex)
+  @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {    
   }
   
 }

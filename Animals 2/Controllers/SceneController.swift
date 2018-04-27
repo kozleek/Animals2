@@ -60,7 +60,6 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
     pageControl.currentPage = currentScreenIndex
     currentAnimal = animals.list[currentScreenIndex]
-    print(currentScreenIndex)
   }
   
   // ---------------------------------------
@@ -69,9 +68,8 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   func showPosition(position: Int){
     scrollView.setContentOffset(CGPoint(x: screenSize.width * CGFloat(position), y: 0), animated: true)
-    currentAnimal = animals.list[position]
     pageControl.currentPage = position
-    print(position)
+    currentAnimal = animals.list[position]
   }
   
   // ---------------------------------------

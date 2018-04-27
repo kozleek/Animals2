@@ -17,7 +17,7 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   var animals = AnimalsBank()
   var currentAnimal: Animal!
-  var currentScreenIndex: Int?
+  var currentScreenIndex: Int = 0
   
   // ---------------------------------------
   // Hlavni funkce
@@ -47,7 +47,9 @@ class SceneController: UIViewController, UIScrollViewDelegate {
     scrollView.delegate = self
     
     pageControl.numberOfPages = animals.list.count
-    pageControl.currentPage = 0        
+    pageControl.currentPage = 0
+    
+    showPosition(position: currentScreenIndex)
   }
   
   // ---------------------------------------
@@ -56,8 +58,20 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   
   func scrollViewDidEndDecelerating(_ sender: UIScrollView){
     currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
-    pageControl.currentPage = currentScreenIndex!
-    currentAnimal = animals.list[currentScreenIndex!]
+    pageControl.currentPage = currentScreenIndex
+    currentAnimal = animals.list[currentScreenIndex]
+    print(currentScreenIndex)
+  }
+  
+  // ---------------------------------------
+  // Zobrazení konkrétního snímku
+  // ---------------------------------------
+  
+  func showPosition(position: Int){
+    scrollView.setContentOffset(CGPoint(x: screenSize.width * CGFloat(position), y: 0), animated: true)
+    currentAnimal = animals.list[position]
+    pageControl.currentPage = position
+    print(position)
   }
   
   // ---------------------------------------

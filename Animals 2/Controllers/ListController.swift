@@ -13,6 +13,7 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
   @IBOutlet weak var collectionView: UICollectionView!
   
   var animalsList = [Animal]()
+  var currentCellIndex: Int = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -41,8 +42,18 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
     return cell
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    // preneseni dat do sceny
+    if segue.identifier == "ListToScene" {
+      if let scene = segue.destination as? SceneController {
+        scene.currentScreenIndex = currentCellIndex
+      }
+    }
+  }
+  
   @objc func buttonTappedInCollectionViewCell(sender: UIButton) {
-    print(sender.tag)
+    currentCellIndex = sender.tag
     self.performSegue(withIdentifier: "ListToScene", sender: nil)
   }
 }

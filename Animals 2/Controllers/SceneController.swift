@@ -54,10 +54,18 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   // ---------------------------------------
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    // preneseni dat do detailu
     if segue.identifier == "SceneToDetail" {
       if let detail = segue.destination as? DetailController {
         detail.animal = currentAnimal
-        detail.scrollViewPosition = currentScreenIndex
+      }
+    }
+    
+    // preneseni dat do seznamu zvirat
+    if segue.identifier == "SceneToList" {
+      if let list = segue.destination as? ListController {
+        list.animalsList = animals.list
       }
     }
   }

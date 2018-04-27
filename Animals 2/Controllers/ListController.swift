@@ -8,17 +8,33 @@
 
 import UIKit
 
-class ListController: UIViewController {
+class ListController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
 
   @IBOutlet weak var collectionView: UICollectionView!
   
+  var animalsList = [Animal]()
+  
   override func viewDidLoad() {
-      super.viewDidLoad()
-    
-      for index in 0...20 {
-        print(index)
-      }
-    
-    }
+    super.viewDidLoad()
+  }
 
+  // ---------------------------------------
+  // Velikost collectionView
+  // ---------------------------------------
+  
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return animalsList.count
+  }
+  
+  // ---------------------------------------
+  // Definování buňky pro collectionView
+  // ---------------------------------------
+  
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCellController
+    cell.ListCellLabel.text = animalsList[indexPath.row].name
+    
+    return cell
+  }
 }

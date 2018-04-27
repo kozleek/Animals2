@@ -13,12 +13,14 @@ class DetailController: UIViewController {
   @IBOutlet weak var detailImage: UIImageView!
   
   var animal: Animal!
-  var scrollViewPosition: Int!
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    // zpracovani predanych informaci ze segue
+    // ---------------------------------------
+    // Zpracování dat ze seque
+    // ---------------------------------------
+    
     detailImage.image = UIImage(named: animal.environment.rawValue)
   }
 

@@ -33,7 +33,7 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCellController
-    cell.ListCellLabel.text = animalsList[indexPath.row].name
+    cell.listCellButton.setTitle(animalsList[indexPath.row].name, for: .normal)
     
     return cell
   }

@@ -9,6 +9,7 @@
 import UIKit
 
 class ListCellController: UICollectionViewCell {
-    
-  @IBOutlet weak var ListCellLabel: UILabel!
+  
+  @IBOutlet weak var listCellButton: UIButton!
+  
 }

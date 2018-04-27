@@ -48,18 +48,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-Dk-M3A">
-                                                    <rect key="frame" x="8" y="15" width="185" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu1-ut-kft">
+                                                    <rect key="frame" x="8" y="8" width="184" height="34"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.1610926798" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Fu1-ut-kft" secondAttribute="trailing" id="08v-dv-BTc"/>
+                                            <constraint firstItem="Fu1-ut-kft" firstAttribute="top" secondItem="abC-98-rE5" secondAttribute="topMargin" id="3Ib-fw-3Bl"/>
+                                            <constraint firstItem="Fu1-ut-kft" firstAttribute="leading" secondItem="abC-98-rE5" secondAttribute="leadingMargin" id="mRP-68-Tgr"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Fu1-ut-kft" secondAttribute="bottom" id="qlL-Gh-9dt"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="ListCellLabel" destination="ULf-Dk-M3A" id="rbI-Rw-rq8"/>
+                                            <outlet property="listCellButton" destination="Fu1-ut-kft" id="Mit-RK-d8v"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

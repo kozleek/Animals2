@@ -93,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Dm7-ym-KXb" id="a5J-Xb-qfi"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ListToScene" modalTransitionStyle="crossDissolve" id="kde-ND-9CW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4N-C2-LlR" userLabel="First Responder" sceneMemberID="firstResponder"/>

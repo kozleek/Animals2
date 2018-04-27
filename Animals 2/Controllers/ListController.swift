@@ -33,8 +33,15 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCellController
+    cell.listCellButton.tag = indexPath.row
     cell.listCellButton.setTitle(animalsList[indexPath.row].name, for: .normal)
+    cell.listCellButton.addTarget(self, action: #selector(buttonTappedInCollectionViewCell), for: .touchUpInside)
     
     return cell
+  }
+  
+  @objc func buttonTappedInCollectionViewCell(sender: UIButton) {
+    print(sender.tag)
+    self.performSegue(withIdentifier: "ListToScene", sender: nil)
   }
 }

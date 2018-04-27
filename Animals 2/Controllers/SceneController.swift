@@ -89,14 +89,7 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   }
 
   @IBAction func pinchOpenAction(_ sender: UIPinchGestureRecognizer) {
-    if sender.state == .began{
-      print("Pinch Began")
-    }
-    if sender.state == .changed{
-      print(String(format:"Pinch scale: %1.3f",sender.scale))
-    }
-    if sender.state == .ended{
-      print("Pinch Ended")
+    if (sender.state == .ended) && (sender.scale < 1){
       performSegue(withIdentifier: "SceneToList", sender: nil)
     }
   }

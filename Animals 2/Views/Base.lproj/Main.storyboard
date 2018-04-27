@@ -50,7 +50,12 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu1-ut-kft">
                                                     <rect key="frame" x="8" y="8" width="184" height="34"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="listCellButtonAction:" destination="abC-98-rE5" eventType="touchUpInside" id="5ql-j2-yxE"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>

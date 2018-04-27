@@ -12,4 +12,6 @@ class ListCellController: UICollectionViewCell {
   
   @IBOutlet weak var listCellButton: UIButton!
   
+  @IBAction func listCellButtonAction(_ sender: UIButton) {  
+  }
 }

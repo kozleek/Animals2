@@ -12,11 +12,13 @@ class Animal {
   
   enum Environment: String {
     case farm = "farm"
+    case field = "field"
     case jungle = "jungle"
     case jungleRiver = "jungleRiver"
     case forest = "forest"
     case sea = "sea"
     case river = "river"
+    case savana = "savana"
   }
   
   let name: String

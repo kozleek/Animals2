@@ -24,10 +24,12 @@ class Animal {
   let name: String
   let image: String
   let environment: Environment
+  let description: String
   
-  init(name: String, image: String, environment: Environment) {
+  init(name: String, image: String, environment: Environment, description: String) {
     self.name = name
     self.image = image
     self.environment = environment
+    self.description = description
   }
 }

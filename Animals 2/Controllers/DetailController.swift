@@ -11,6 +11,8 @@ import UIKit
 class DetailController: UIViewController {
 
   @IBOutlet weak var detailImage: UIImageView!
+  @IBOutlet weak var detailView: UIView!
+  @IBOutlet weak var detailLabel: UILabel!
   
   var animal: Animal!
   
@@ -22,6 +24,12 @@ class DetailController: UIViewController {
     // ---------------------------------------
     
     detailImage.image = UIImage(named: animal.environment.rawValue)
+    
+    if( animal.description != "" ){
+      detailView.isHidden = false
+      detailView.layer.cornerRadius = 30
+      detailLabel.text = animal.description
+    }
   }
 
 }

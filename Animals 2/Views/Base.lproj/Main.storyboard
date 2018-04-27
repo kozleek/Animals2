@@ -123,13 +123,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c6k-Mz-75f">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgO-Wb-6E5">
+                                <rect key="frame" x="100" y="568" width="824" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Papoušek žije v džungli" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpJ-Yt-FHr">
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="150"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="OpJ-Yt-FHr" secondAttribute="trailing" id="5VW-Wn-W0D"/>
+                                    <constraint firstItem="OpJ-Yt-FHr" firstAttribute="leading" secondItem="bgO-Wb-6E5" secondAttribute="leading" id="Cqv-NI-nn7"/>
+                                    <constraint firstAttribute="bottom" secondItem="OpJ-Yt-FHr" secondAttribute="bottom" id="dra-21-Lel"/>
+                                    <constraint firstAttribute="height" constant="150" id="imF-Im-tfC"/>
+                                    <constraint firstItem="OpJ-Yt-FHr" firstAttribute="top" secondItem="bgO-Wb-6E5" secondAttribute="top" id="pcz-gp-JKW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="Gwa-JH-HyE" firstAttribute="trailing" secondItem="bgO-Wb-6E5" secondAttribute="trailing" constant="100" id="EPs-Cc-XaY"/>
+                            <constraint firstItem="Gwa-JH-HyE" firstAttribute="bottom" secondItem="bgO-Wb-6E5" secondAttribute="bottom" constant="50" id="F6h-ZY-8aT"/>
                             <constraint firstItem="c6k-Mz-75f" firstAttribute="leading" secondItem="nNx-Si-evX" secondAttribute="leading" id="KZG-My-ZCw"/>
                             <constraint firstAttribute="bottom" secondItem="c6k-Mz-75f" secondAttribute="bottom" id="ORy-Db-xOm"/>
                             <constraint firstItem="c6k-Mz-75f" firstAttribute="top" secondItem="nNx-Si-evX" secondAttribute="top" id="R5g-99-0TV"/>
+                            <constraint firstItem="bgO-Wb-6E5" firstAttribute="leading" secondItem="Gwa-JH-HyE" secondAttribute="leading" constant="100" id="eyb-m5-JkG"/>
                             <constraint firstAttribute="trailing" secondItem="c6k-Mz-75f" secondAttribute="trailing" id="mbQ-94-LH2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gwa-JH-HyE"/>
@@ -139,6 +161,8 @@
                     </view>
                     <connections>
                         <outlet property="detailImage" destination="c6k-Mz-75f" id="w6q-iJ-Yab"/>
+                        <outlet property="detailLabel" destination="OpJ-Yt-FHr" id="g7a-XH-gdg"/>
+                        <outlet property="detailView" destination="bgO-Wb-6E5" id="cE4-Gx-AiB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3x-CN-BqT" userLabel="First Responder" sceneMemberID="firstResponder"/>

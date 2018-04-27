@@ -34,6 +34,7 @@ class SceneController: UIViewController, UIScrollViewDelegate {
       scrollItem.backgroundColor = UIColor.black
       
       let scrollItemImage = UIImageView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
+      //scrollItemImage.contentMode = .scaleAspectFill
       scrollItemImage.image = UIImage(named: animals.list[index].image)
       scrollItemImage.isUserInteractionEnabled = true
       

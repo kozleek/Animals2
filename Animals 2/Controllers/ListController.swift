@@ -35,6 +35,7 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListCell", for: indexPath) as! ListCellController
     cell.listCellButton.tag = indexPath.row
     cell.listCellButton.setTitle(animalsList[indexPath.row].name, for: .normal)
+    cell.listCellImage.image = UIImage(named: animalsList[indexPath.row].image)
     cell.listCellButton.addTarget(self, action: #selector(buttonTappedInCollectionViewCell), for: .touchUpInside)
     
     return cell

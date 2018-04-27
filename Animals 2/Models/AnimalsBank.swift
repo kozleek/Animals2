@@ -24,6 +24,7 @@ class AnimalsBank {
     self.list.append(Animal(name: "Králík", image: "rabbit", environment: .field))
     self.list.append(Animal(name: "Lev", image: "leo", environment: .savana))
     self.list.append(Animal(name: "Gorila", image: "gorilla", environment: .jungle))
+    self.list.append(Animal(name: "Had", image: "snake", environment: .jungle))
     self.list.append(Animal(name: "Jehně", image: "lamb", environment: .field))
     self.list.append(Animal(name: "Liška", image: "fox", environment: .forest))
     self.list.append(Animal(name: "Žirafa", image: "giraffe", environment: .jungle))

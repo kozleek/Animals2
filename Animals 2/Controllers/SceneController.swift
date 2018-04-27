@@ -50,6 +50,16 @@ class SceneController: UIViewController, UIScrollViewDelegate {
   }
   
   // ---------------------------------------
+  // ScrollView - vyhodnocení stavu
+  // ---------------------------------------
+  
+  func scrollViewDidEndDecelerating(_ sender: UIScrollView){
+    currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
+    pageControl.currentPage = currentScreenIndex
+    currentAnimal = animals.list[currentScreenIndex]
+  }
+  
+  // ---------------------------------------
   // Připrava dat pro předání přes segue
   // ---------------------------------------
   
@@ -68,16 +78,6 @@ class SceneController: UIViewController, UIScrollViewDelegate {
         list.animalsList = animals.list
       }
     }
-  }
-  
-  // ---------------------------------------
-  // ScrollView - vyhodnocení stavu
-  // ---------------------------------------
-  
-  func scrollViewDidEndDecelerating(_ sender: UIScrollView){
-    currentScreenIndex = Int(sender.contentOffset.x / screenSize.width)
-    pageControl.currentPage = currentScreenIndex
-    currentAnimal = animals.list[currentScreenIndex]
   }
 
   // ---------------------------------------

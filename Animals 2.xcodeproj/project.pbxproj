@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E02521D820951C5600D80413 /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = E02521D720951C5600D80413 /* Animals.json */; };
 		E087BA7D209246F50062C37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA7C209246F50062C37F /* AppDelegate.swift */; };
 		E087BA82209246F50062C37F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E087BA80209246F50062C37F /* Main.storyboard */; };
 		E087BA84209246F70062C37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E087BA83209246F70062C37F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E02521D720951C5600D80413 /* Animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
 		E087BA79209246F50062C37F /* Animals 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E087BA7C209246F50062C37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E087BA81209246F50062C37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				E087BA83209246F70062C37F /* Assets.xcassets */,
 				E087BA92209248490062C37F /* Animal.swift */,
 				E087BA91209248490062C37F /* AnimalsBank.swift */,
+				E02521D720951C5600D80413 /* Animals.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02521D820951C5600D80413 /* Animals.json in Resources */,
 				E087BA84209246F70062C37F /* Assets.xcassets in Resources */,
 				E087BA82209246F50062C37F /* Main.storyboard in Resources */,
 			);

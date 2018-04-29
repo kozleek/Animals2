@@ -10,14 +10,24 @@ import UIKit
 
 class SceneController: UIViewController, UIScrollViewDelegate {
 
-  @IBOutlet weak var scrollView: UIScrollView!
-  @IBOutlet weak var pageControl: UIPageControl!
-  
   var screenSize: CGRect = UIScreen.main.bounds
-  
   var animals = AnimalsBank()
   var currentAnimal: Animal!
   var currentScreenIndex: Int = 0
+  
+  @IBOutlet weak var scrollView: UIScrollView! {
+    didSet {
+      scrollView.contentSize = CGSize(width: CGFloat(animals.list.count) * screenSize.width, height: 0)
+      scrollView.delegate = self
+    }
+  }
+  
+  @IBOutlet weak var pageControl: UIPageControl! {
+    didSet {
+      pageControl.numberOfPages = animals.list.count
+      pageControl.currentPage = currentScreenIndex
+    }
+  }
   
   // ---------------------------------------
   // Hlavni funkce
@@ -34,7 +44,6 @@ class SceneController: UIViewController, UIScrollViewDelegate {
       scrollItem.backgroundColor = UIColor.black
       
       let scrollItemImage = UIImageView(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height))
-      //scrollItemImage.contentMode = .scaleAspectFill
       scrollItemImage.image = UIImage(named: animals.list[index].image)
       scrollItemImage.isUserInteractionEnabled = true
       
@@ -42,12 +51,6 @@ class SceneController: UIViewController, UIScrollViewDelegate {
       scrollView.addSubview(scrollItem)
       
     }
-    
-    scrollView.contentSize = CGSize(width: CGFloat(animals.list.count) * screenSize.width, height: 0)
-    scrollView.delegate = self
-    
-    pageControl.numberOfPages = animals.list.count
-    pageControl.currentPage = 0
     
     showPosition(position: currentScreenIndex)
   }

@@ -20,7 +20,7 @@ class AnimalsBank {
     self.list.append(Animal(name: "Kočka", image: "cat", environment: .farm, description: "Kočka žije na statku"))
     self.list.append(Animal(name: "Sova", image: "owl", environment: .forest, description: "Sova žije v lese"))
     self.list.append(Animal(name: "Papoušek", image: "parrot", environment: .jungle, description: "Papoušek žije v džungli"))
-    self.list.append(Animal(name: "Slepice", image: "chicken", environment: .farm, description: "Slepice žije na statku"))
+    self.list.append(Animal(name: "Kohout", image: "rooster", environment: .farm, description: "Slepice žije na statku"))
     self.list.append(Animal(name: "Králík", image: "rabbit", environment: .field, description: "Králík žije na louce"))
     self.list.append(Animal(name: "Lev", image: "leo", environment: .savana, description: "Lev žije v savaně"))
     self.list.append(Animal(name: "Gorila", image: "gorilla", environment: .jungle, description: "Gorila žije v džungli"))

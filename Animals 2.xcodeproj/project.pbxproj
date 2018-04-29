@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A82584BFDC6BCC55054BE509 /* Pods_Animals_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01149BBFDCD630B9942F8DA /* Pods_Animals_2.framework */; };
 		E02521D820951C5600D80413 /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = E02521D720951C5600D80413 /* Animals.json */; };
+		E02521F82095AEBC00D80413 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02521F72095AEBC00D80413 /* Extension.swift */; };
 		E087BA7D209246F50062C37F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087BA7C209246F50062C37F /* AppDelegate.swift */; };
 		E087BA82209246F50062C37F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E087BA80209246F50062C37F /* Main.storyboard */; };
 		E087BA84209246F70062C37F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E087BA83209246F70062C37F /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		6FD5F6A7985DC691531D1F06 /* Pods-Animals 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animals 2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Animals 2/Pods-Animals 2.debug.xcconfig"; sourceTree = "<group>"; };
 		D01149BBFDCD630B9942F8DA /* Pods_Animals_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animals_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E02521D720951C5600D80413 /* Animals.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
+		E02521F72095AEBC00D80413 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		E087BA79209246F50062C37F /* Animals 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animals 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E087BA7C209246F50062C37F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E087BA81209246F50062C37F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				E087BA97209255740062C37F /* DetailController.swift */,
 				E087BA992092E45E0062C37F /* ListController.swift */,
 				E087BA9B2092E82D0062C37F /* ListCellController.swift */,
+				E02521F72095AEBC00D80413 /* Extension.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				E087BA8F209247460062C37F /* SceneController.swift in Sources */,
 				E087BA9A2092E45E0062C37F /* ListController.swift in Sources */,
 				E087BA9C2092E82D0062C37F /* ListCellController.swift in Sources */,
+				E02521F82095AEBC00D80413 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,24 +10,13 @@ import Foundation
 
 class Animal {
   
-  enum Environment: String {
-    case farm = "farm"
-    case field = "field"
-    case jungle = "jungle"
-    case jungleRiver = "jungleRiver"
-    case forest = "forest"
-    case sea = "sea"
-    case river = "river"
-    case savana = "savana"
-  }
-  
   let id: String
   let name: String
   let image: String
-  let environment: Environment
+  let environment: String
   let description: String
   
-  init(id: String, name: String, environment: Environment, description: String) {
+  init(id: String, name: String, environment: String, description: String) {
     self.id = id
     self.name = name
     self.image = id

@@ -32,7 +32,7 @@ class AnimalsBank {
           let animal = Animal(
             id: jsonAnimals[index]["id"].string!,
             name: jsonAnimals[index]["name"].string!,
-            environment: .farm,
+            environment: jsonAnimals[index]["environment"].string!,
             description: jsonAnimals[index]["description"].string!
           )
           

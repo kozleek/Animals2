@@ -23,7 +23,7 @@ class DetailController: UIViewController {
     // Zpracování dat ze seque
     // ---------------------------------------
     
-    detailImage.image = UIImage(named: animal.environment.rawValue)
+    detailImage.image = UIImage(named: animal.environment)
     
     if( animal.description != "" ){
       detailView.isHidden = false

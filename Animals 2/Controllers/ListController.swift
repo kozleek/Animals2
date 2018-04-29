@@ -42,6 +42,10 @@ class ListController: UIViewController, UICollectionViewDelegate, UICollectionVi
     return cell
   }
   
+  // ---------------------------------------
+  // Připrava dat pro předání přes segue
+  // ---------------------------------------
+  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
     // preneseni dat do sceny

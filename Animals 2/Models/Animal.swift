@@ -21,14 +21,16 @@ class Animal {
     case savana = "savana"
   }
   
+  let id: String
   let name: String
   let image: String
   let environment: Environment
   let description: String
   
-  init(name: String, image: String, environment: Environment, description: String) {
+  init(id: String, name: String, environment: Environment, description: String) {
+    self.id = id
     self.name = name
-    self.image = image
+    self.image = id
     self.environment = environment
     self.description = description
   }

@@ -1,0 +1,59 @@
+{
+  "animals": [
+              {
+              "name": "Pes",
+              "image": "dog",
+              "voice": "dog",
+              "environment": "farm",
+              "description": "Pes žije na farmě"
+              },
+              
+              {
+              "name": "Jaguar",
+              "image": "jaguar",
+              "voice": "jaguar",
+              "environment": "jungle",
+              "description": "Jaguár žije v džungli"
+              },
+              
+              {
+              "name": "Slon",
+              "image": "elephant",
+              "voice": "elephant",
+              "environment": "savana",
+              "description": "Slon žije v savaně"
+              },
+              
+              {
+              "name": "Kočka",
+              "image": "cat",
+              "voice": "cat",
+              "environment": "farm",
+              "description": "Kočka žije na statku"
+              },
+              
+              {
+              "name": "Sova",
+              "image": "owl",
+              "voice": "owl",
+              "environment": "forest",
+              "description": "Sova žije v lese"
+              },
+              
+              {
+              "name": "Papoušek",
+              "image": "parrot",
+              "voice": "parrot",
+              "environment": "jungle",
+              "description": "Papoušek žije v džungli"
+              },
+              
+              {
+              "name": "Kohout",
+              "image": "rooster",
+              "voice": "rooster",
+              "environment": "farm",
+              "description": "Kohout žije na statku"
+              },
+  ]
+}

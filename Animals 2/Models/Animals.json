@@ -1,59 +1,171 @@
 {
   "animals": [
               {
+              "id": "dog",
               "name": "Pes",
-              "image": "dog",
-              "voice": "dog",
               "environment": "farm",
               "description": "Pes žije na farmě"
               },
               
               {
+              "id": "jaguar",
               "name": "Jaguar",
-              "image": "jaguar",
-              "voice": "jaguar",
               "environment": "jungle",
               "description": "Jaguár žije v džungli"
               },
               
               {
+              "id": "elephant",
               "name": "Slon",
-              "image": "elephant",
-              "voice": "elephant",
               "environment": "savana",
               "description": "Slon žije v savaně"
               },
               
               {
+              "id": "cat",
               "name": "Kočka",
-              "image": "cat",
-              "voice": "cat",
               "environment": "farm",
               "description": "Kočka žije na statku"
               },
               
               {
+              "id": "owl",
               "name": "Sova",
-              "image": "owl",
-              "voice": "owl",
               "environment": "forest",
               "description": "Sova žije v lese"
               },
               
               {
+              "id": "parrot",
               "name": "Papoušek",
-              "image": "parrot",
-              "voice": "parrot",
               "environment": "jungle",
               "description": "Papoušek žije v džungli"
               },
               
               {
+              "id": "rooster",
               "name": "Kohout",
-              "image": "rooster",
-              "voice": "rooster",
               "environment": "farm",
               "description": "Kohout žije na statku"
               },
+            
+              {
+              "id": "rabbit",
+              "name": "Králík",
+              "environment": "field",
+              "description": "Králík žije na louce"
+              },
+              
+              {
+              "id": "leo",
+              "name": "Lev",
+              "environment": "savana",
+              "description": "Lev žije v savaně"
+              },
+              
+              {
+              "id": "gorilla",
+              "name": "Gorila",
+              "environment": "jungle",
+              "description": "Gorila žije v džungli"
+              },
+              
+              {
+              "id": "snake",
+              "name": "Had",
+              "environment": "jungle",
+              "description": "Had žije v džungli"
+              },
+              
+              {
+              "id": "lamb",
+              "name": "Jehně",
+              "environment": "farm",
+              "description": "Jehně žije na statku"
+              },
+              
+              {
+              "id": "fox",
+              "name": "Liška",
+              "environment": "forest",
+              "description": "Liška žije v lese"
+              },
+              
+              {
+              "id": "giraffe",
+              "name": "Žirafa",
+              "environment": "savana",
+              "description": "Žirafa žije v savaně"
+              },
+              
+              {
+              "id": "horse",
+              "name": "Kůň",
+              "environment": "farm",
+              "description": "Kůň žije na statku"
+              },
+              
+              {
+              "id": "gorilla",
+              "name": "Gorila",
+              "environment": "jungle",
+              "description": "Gorila žije v džungli"
+              },
+              
+              {
+              "id": "squirrel",
+              "name": "Veverka",
+              "environment": "forest",
+              "description": "Veverka žije v lese"
+              },
+              
+              {
+              "id": "deer",
+              "name": "Jelen",
+              "environment": "forest",
+              "description": "Jelen žije v lese"
+              },
+              
+              {
+              "id": "crocodile",
+              "name": "Krokodýl",
+              "environment": "jungleRiver",
+              "description": "Veverka žije v lese"
+              },
+              
+              {
+              "id": "squirrel",
+              "name": "Veverka",
+              "environment": "forest",
+              "description": "Krokodýl žije u řeky"
+              },
+              
+              {
+              "id": "mole",
+              "name": "Krtek",
+              "environment": "field",
+              "description": "Krtek žije v louce"
+              },
+              
+              {
+              "id": "panda",
+              "name": "Panda",
+              "environment": "forest",
+              "description": "Panda žije na stromech"
+              },
+              
+              {
+              "id": "cow",
+              "name": "Kráva",
+              "environment": "farm",
+              "description": "Kráva žije na farmě"
+              },
+              
+              {
+              "id": "bear",
+              "name": "Medvěd",
+              "environment": "forest",
+              "description": "Medvěd žije v lese"
+              }
   ]
 }

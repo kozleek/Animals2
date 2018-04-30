@@ -7,5 +7,6 @@ target 'Animals 2' do
 
   # Pods for Animals 2
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'Alamofire'
 
 end
